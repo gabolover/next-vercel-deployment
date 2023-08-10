@@ -2,10 +2,11 @@ import Head from "next/head";
 import { NavBar } from "../Navbar";
 import styles from "./MainLayout.module.css";
 import { Inter } from "next/font/google";
+import { FC } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const MainLayout = ({ children }) => {
+export const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Head>
